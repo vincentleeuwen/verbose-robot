@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Example</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h3>Calculator</h3>
+  <p id="message">Input a number to get started.</p>
+  <progress value="0" max="100" id="progress"></progress>
+  <form id="submit-form">
+    <label for="input-number">Input</label>
+    <input id="input-number" type="number" min="0" required></input>
+    <button>Start</button>
+  </form>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

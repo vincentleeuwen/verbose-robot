@@ -40,7 +40,7 @@ function stepTwo(answer) {
 }
 
 function stepThree(answer) {
-  $('#message').html('Answer step one: <strong>' + answer + '</strong>. Processing step three...');
+  $('#message').html('Answer step two: <strong>' + answer + '</strong>. Processing step three...');
   $('#progress').val(66);
   $.ajax({
     type: "POST",
@@ -55,7 +55,7 @@ function stepThree(answer) {
 
 }
 
-// @dev: Etc, etc, just keep adding steps
+// @dev: Etc, etc, just keep adding steps until you're done and call done
 
 function done(answer) {
   // @dev: give user final answer
